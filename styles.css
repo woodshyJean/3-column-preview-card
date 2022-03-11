@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+}
+.attribution{
+    display:none;
+}
+body{
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    Font-size: 15px;
+}
+.main{
+    height: 100%;
+    display: flex;
+    width:60%;
+    margin:auto;
+    align-items: center;
+}
+img{
+    height: 40px;
+    width:64px;
+    position: absolute;
+    top: 10%;
+}
+h1{
+    top:25%;
+    position: absolute;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+.paragraph{
+    position:absolute;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+    top:40%;
+    width:75%;
+    height: 35%;
+}
+a{
+    position:absolute;
+    display: flex;
+    bottom:45px;
+    border: 2px solid white;
+    width:40%;
+    height: 8%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    transition: background-color ease;
+    transition: color ease;
+    padding: 0px 10px 0px 10px;
+}
+a:hover{
+    background-color: transparent;
+    color:hsl(0, 0%, 95%);
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.sedans{
+    position: relative;
+    padding: 5%;
+    height: 60%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.suvs{
+    position: relative;
+    padding:5%;
+    height:60%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(184, 100%, 22%);
+}
+.luxury{
+    position: relative;
+    padding:5%;
+    height: 60%;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media screen  and (max-width:700px){
+    .body{
+        orientation: portrait;
+    }
+    .main{
+        display:relative;
+    }
+    .sedans{
+        border-radius: 10px 10px 0px 0px;
+        position: absolute;
+        top:18%;
+    }
+    .suvs{
+        position: absolute;
+        top: 82%;
+    }
+    .luxury{
+        border-radius: 0px 0px 10px 10px;
+        position: absolute;
+        top:146%;
+    }
+}
